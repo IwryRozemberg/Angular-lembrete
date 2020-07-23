@@ -5,7 +5,7 @@
             <div class="text-right">
                 <button class="btn btn-success" routerLink="/lembrete/criar">Novo lembrete</button>
             </div>
-            <div class="text-center" *ngIf="lembreteService.lembretes$ | async">Nenhum lembrete cadastrado.</div>
+            <div class="text-center" *ngIf="(lembreteService.lembretes$ | async)?.length == 0">Nenhum lembrete cadastrado.</div>
         </div>
     </div>
 </div>
