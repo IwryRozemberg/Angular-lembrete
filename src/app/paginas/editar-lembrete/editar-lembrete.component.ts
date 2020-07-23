@@ -23,7 +23,7 @@ export class EditarLembreteComponent {
     this.lembreteService.getLembreteById(id)
       .subscribe(
         (lembrete: Lembrete) => { this.lembrete = lembrete; },
-        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembrete.\n${err}`); }
+        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembrete.`); }
       );
   }
 
@@ -31,7 +31,7 @@ export class EditarLembreteComponent {
     this.lembreteService.updateLembrete(lembrete)
       .subscribe(
         () => { this.router.navigateByUrl('/'); },
-        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembrete.\n${err}`); }
+        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembrete.`); }
       );
   }
 }

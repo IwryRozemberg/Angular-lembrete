@@ -21,7 +21,7 @@ export class ListaLembreteComponent implements OnInit {
     this.lembreteService.atualizarLembretes()
       .subscribe(
         () => {},
-        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembretes:\n${err}`); }
+        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao buscar lembretes.`); }
       );
   }
 
@@ -31,7 +31,7 @@ export class ListaLembreteComponent implements OnInit {
         () => {
           this.getListaLembretes();
         },
-        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao deletar lembrete:\n${err}`); }
+        (err) => { this.errorMsgComponent.setErrorMessage(`Falha ao deletar lembrete.`); }
       );
   }
 }
