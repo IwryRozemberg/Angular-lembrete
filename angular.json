@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lembrete-front-end-angular"
+    }
+  },
+  "defaultProject": "lembrete-front-end-angular",
+  "cli": {
+    "analytics": "776b166e-0d88-4222-8790-f85f1092c00f"
+  }
 }
